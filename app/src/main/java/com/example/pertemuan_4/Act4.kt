@@ -23,12 +23,58 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.size
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.res.painterResource
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 
 
 @Composable
-fun ActivitasPertama() {
-    Text(text = "Halaman Profil Mahasiswa")
+fun ActivitasPertama(
+    modifier: Modifier = Modifier
+) {
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .verticalScroll(rememberScrollState())
+            .padding(
+                horizontal = dimensionResource(
+                    R.dimen.padding_halaman
+                )
+            ),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Spacer(
+            modifier = Modifier.height(
+                dimensionResource(R.dimen.jarak_atas)
+            )
+        )
+
+        Text(
+            text = stringResource(R.string.prodi),
+            color = colorResource(R.color.warna_hitam),
+            fontSize = dimensionResource(
+                R.dimen.ukuran_judul
+            ).value.sp,
+            fontWeight = FontWeight.Bold
+        )
+
+        Text(
+            text = stringResource(R.string.univ),
+            color = colorResource(R.color.warna_hitam),
+            fontSize = dimensionResource(
+                R.dimen.ukuran_universitas
+            ).value.sp
+        )
+
+        Spacer(
+            modifier = Modifier.height(
+                dimensionResource(R.dimen.jarak_judul)
+            )
+        )
+    }
 }
+
 
 
 @Composable
