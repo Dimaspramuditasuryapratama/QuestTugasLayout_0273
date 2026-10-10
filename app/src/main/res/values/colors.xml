@@ -11,4 +11,9 @@
     <color name="warna_kartu_2">#7038D0</color>
     <color name="warna_kartu_3">#1000FF</color>
     <color name="warna_kartu_4">#006400</color>
+    <color name="warna_latar">#FAF8FF</color>
+    <color name="warna_putih">#FFFFFF</color>
+    <color name="warna_hitam">#171717</color>
+    <color name="warna_kuning">#FFFF00</color>
+    <color name="warna_biru_muda">#80D8FF</color>
 </resources>
