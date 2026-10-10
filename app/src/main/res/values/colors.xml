@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="warna_kartu_1">#575454</color>
+    <color name="warna_kartu_2">#7038D0</color>
+    <color name="warna_kartu_3">#1000FF</color>
+    <color name="warna_kartu_4">#006400</color>
 </resources>
