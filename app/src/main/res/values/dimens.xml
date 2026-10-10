@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_halaman">12dp</dimen>
+    <dimen name="padding_kartu">10dp</dimen>
+    <dimen name="jarak_atas">50dp</dimen>
+    <dimen name="jarak_judul">20dp</dimen>
+    <dimen name="jarak_kartu">8dp</dimen>
+    <dimen name="jarak_logo">10dp</dimen>
+    <dimen name="ukuran_logo">44dp</dimen>
+    <dimen name="ukuran_judul">24sp</dimen>
+    <dimen name="ukuran_universitas">12sp</dimen>
+    <dimen name="ukuran_nama">16sp</dimen>
+    <dimen name="ukuran_detail">11sp</dimen>
+    <dimen name="ukuran_copyright">9sp</dimen>
+    <dimen name="jarak_copyright">16dp</dimen>
+</resources>
