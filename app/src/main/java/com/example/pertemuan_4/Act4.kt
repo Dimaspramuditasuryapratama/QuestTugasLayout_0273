@@ -16,6 +16,14 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.size
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.res.painterResource
+
 
 @Composable
 fun ActivitasPertama() {
@@ -38,34 +46,66 @@ fun CardProfil(
             containerColor = colorResource(warna)
         )
     ) {
-        Column(
-            modifier = Modifier.padding(
-                dimensionResource(R.dimen.padding_kartu)
-            )
+
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(dimensionResource(R.dimen.padding_kartu)),
+            verticalAlignment = Alignment.CenterVertically
         ) {
-            Text(
-                text = stringResource(nama),
-                color = colorResource(R.color.warna_putih),
-                fontSize = dimensionResource(
-                    R.dimen.ukuran_nama
-                ).value.sp,
-                fontWeight = FontWeight.Bold
+            Image(
+                painter = painterResource(R.drawable.logo_umy),
+                contentDescription = stringResource(R.string.deskripsi_logo),
+                modifier = Modifier.size(
+                    dimensionResource(R.dimen.ukuran_logo)
+                )
             )
 
-            Text(
-                text = stringResource(telepon),
-                color = colorResource(R.color.warna_biru_muda),
-                fontSize = dimensionResource(
-                    R.dimen.ukuran_detail
-                ).value.sp
+            Spacer(
+                modifier = Modifier.width(
+                    dimensionResource(R.dimen.jarak_logo)
+                )
             )
 
-            Text(
-                text = stringResource(alamat),
-                color = colorResource(R.color.warna_kuning),
-                fontSize = dimensionResource(
-                    R.dimen.ukuran_detail
-                ).value.sp
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = stringResource(nama),
+                    color = colorResource(R.color.warna_putih),
+                    fontSize = dimensionResource(
+                        R.dimen.ukuran_nama
+                    ).value.sp,
+                    fontWeight = FontWeight.Bold
+                )
+
+                Text(
+                    text = stringResource(telepon),
+                    color = colorResource(R.color.warna_biru_muda),
+                    fontSize = dimensionResource(
+                        R.dimen.ukuran_detail
+                    ).value.sp
+                )
+
+                Text(
+                    text = stringResource(alamat),
+                    color = colorResource(R.color.warna_kuning),
+                    fontSize = dimensionResource(
+                        R.dimen.ukuran_detail
+                    ).value.sp
+                )
+            }
+
+            Spacer(
+                modifier = Modifier.width(
+                    dimensionResource(R.dimen.jarak_logo)
+                )
+            )
+
+            Image(
+                painter = painterResource(R.drawable.logo_umy),
+                contentDescription = stringResource(R.string.deskripsi_logo),
+                modifier = Modifier.size(
+                    dimensionResource(R.dimen.ukuran_logo)
+                )
             )
         }
     }
