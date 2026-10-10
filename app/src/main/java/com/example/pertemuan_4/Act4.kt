@@ -72,6 +72,7 @@ fun ActivitasPertama(
                 dimensionResource(R.dimen.jarak_judul)
             )
         )
+
         CardProfil(
             nama = R.string.nama_1,
             telepon = R.string.telepon_1,
@@ -79,6 +80,21 @@ fun ActivitasPertama(
             warna = R.color.warna_kartu_1,
             namaMiring = true
         )
+
+        Spacer(
+            modifier = Modifier.height(
+                dimensionResource(R.dimen.jarak_kartu)
+            )
+        )
+
+        CardProfil(
+            nama = R.string.nama_2,
+            telepon = R.string.telepon_2,
+            alamat = R.string.alamat_2,
+            warna = R.color.warna_kartu_2
+        )
+
+
     }
 }
 
