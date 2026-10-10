@@ -119,6 +119,20 @@ fun ActivitasPertama(
             alamat = R.string.alamat_4,
             warna = R.color.warna_kartu_4
         )
+
+        Spacer(
+            modifier = Modifier.height(
+                dimensionResource(R.dimen.jarak_copyright)
+            )
+        )
+
+        Text(
+            text = stringResource(R.string.copyright),
+            color = colorResource(R.color.warna_hitam),
+            fontSize = dimensionResource(
+                R.dimen.ukuran_copyright
+            ).value.sp
+        )
     }
 }
 
