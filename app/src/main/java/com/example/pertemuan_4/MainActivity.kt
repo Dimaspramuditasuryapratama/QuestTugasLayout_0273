@@ -3,10 +3,10 @@ package com.example.pertemuan_4
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.material3.MaterialTheme
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import com.example.pertemuan_4.ui.theme.Pertemuan_4Theme
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.colorResource
 import com.example.pertemuan_4.ui.theme.Pertemuan_4Theme
 
 class MainActivity : ComponentActivity() {
@@ -14,9 +14,12 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            Pertemuan_4Theme() {
-                Surface(color = MaterialTheme.colorScheme.background) {
-                    Text(text = "Aplikasi Profil Mahasiswa")
+            Pertemuan_4Theme {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = colorResource(R.color.warna_latar)
+                ) {
+                    ActivitasPertama()
                 }
             }
         }
