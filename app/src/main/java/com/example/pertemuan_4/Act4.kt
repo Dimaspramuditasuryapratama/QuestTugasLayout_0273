@@ -106,6 +106,19 @@ fun ActivitasPertama(
             alamat = R.string.alamat_3,
             warna = R.color.warna_kartu_3
         )
+
+        Spacer(
+            modifier = Modifier.height(
+                dimensionResource(R.dimen.jarak_kartu)
+            )
+        )
+
+        CardProfil(
+            nama = R.string.nama_4,
+            telepon = R.string.telepon_4,
+            alamat = R.string.alamat_4,
+            warna = R.color.warna_kartu_4
+        )
     }
 }
 
